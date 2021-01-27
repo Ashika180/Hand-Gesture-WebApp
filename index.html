@@ -1,0 +1,80 @@
+<html>
+    
+<head>
+    <title> Hand Gesture WebApp </title>
+
+    <link rel= "stylesheet" href= "style.css">
+    <script src= "function.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Yellowtail&family=Yeon+Sung&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+</head>
+
+<body>
+<center>
+    <h1 id= "heading"><u> Hand Gesture WebApp </u></h1>
+
+        <div class= "image-section">
+
+            <div class= "first-image">
+        <button onclick= "show_gestures()" class= "btn1"> Show Gestures </button>
+        </div>
+
+        <div class= "first-image">
+            <button onclick= "next_page()" class= "btn1"> Next Page </button>
+        </div>
+
+        </div>
+
+    <div style= "width: 450px;  visibility: hidden;" id= "signs">
+      <span class= "sign"> &#128077; </span>
+
+       <span class= "sign"> &#9996; </span>
+
+       <span class= "sign"> &#128076; </span>
+
+       <span class= "sign"> &#129304; </span>
+
+       <span class= "sign"> 👉 </span>
+
+       <span class= "sign"> &#9994; </span>
+    </div>
+
+    <br>
+
+    <div id= "cam1"></div>
+
+    <div id= "gif">
+        <img id= "gif" src= "jif2.gif" style= "background-color: rgb(109, 68, 30);">
+    </div>
+
+    <span>
+        <div id= "pic_invisible"></div>
+    </span>
+    <h3 class= "bt btn-danger" id= "note"> This picture will not be visible to any user but you. </h3>
+    <button class= "btn btn-info" onclick= "snap()"> Take Picture </button>
+<br><br>
+
+    <h4 style= "font-family: fantasy; font-size: 20px; font-weight: bold; color: whitesmoke"> Enter your nickname :  
+        <span>
+             <input id= "name" type= "text" placeholder= "Don't enter your real name!"> 
+            </span>
+
+            <span>
+                     
+<button onclick= "save()" style= "font-size: 18px;" class= "btn btn-primary"> Save </button>
+            </span>
+    </h4>
+
+</center>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+body{
+    text-align: center;
+    background: radial-gradient(circle at 50%, #333, #333 60%, #eee 75%, #333 75%);
+}
+
+#heading{
+    font-family: 'Redressed', cursive;
+    color: black;
+    font-size: 40px;
+    background: linear-gradient(#c2e59c, #64b3f4);
+    width: 500px;
+    height: 65px;
+    padding-top: 10px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+#heading:hover{
+    animation-name: Change_font;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Change_font{
+    0%{font-family: 'Times New Roman', Times, serif;}
+    10%{font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;}
+    20%{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+    30%{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+    40%{font-family:Arial, Helvetica, sans-serif}
+    50%{font-family:Verdana, Geneva, Tahoma, sans-serif}
+    60%{font-family:cursive}
+    70%{font-family:fantasy}
+    80%{font-family:sans-serif}
+    90%{font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif}
+    100%{font-family: Georgia, 'Times New Roman', Times, serif;}
+}
+
+.image-section{
+    display:flex;
+    justify-content:center;
+    margin-top: -65px;
+}
+
+.first-image{
+    margin: 40px;
+}
+
+.btn1 {
+    background-color: white; 
+    color: black; 
+    border: 5px solid pink;
+    font-family: 'Yeon Sung', cursive;
+    font-size: 25px;
+  }
+
+  .btn1:hover {
+    background-color: rgb(151, 88, 235);
+    color: gold;
+  }
+
+  #name{
+      color: orange;
+      font-size: 20px;
+      font-family: 'Xanh Mono', monospace;
+  }
+  
+  .sign{
+      font-size: 40px;
+      color: white;
+  }
+
+  #signs{
+      background: linear-gradient(to bottom, #4ca1af,  #c4e0e5);
+      border-radius: 5px;
+      margin-top: -150px;
+      
+  }
+  
+  #cam1{
+  width: 485px;
+  height: 450px;
+  border: 5px groove rgb(252, 142, 246);
+  display: none;
+  }
+
+#name{
+    width: 300px;
+    font-family: arial;
+    font-weight: normal;
+    font-size: 17.5;
+  margin-bottom: 80px;
+}
+
+#note{
+    width: 585px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Yeon Sung', cursive;
+    font-size: 25px;
+}
+
+#captured_image{
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+}
+
+.image-section{
+    display: flex;
+    justify-content: center;
+    height: 350px;
+}
+
+.first-image{
+    margin: 100px;
+}
+
+#gif{
+    width: 485px;
+    height: 450px;
+    border: 5px groove rgb(255, 145, 218);  
+}
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+ 

@@ -1,0 +1,11 @@
+body{
+animation-name: colorchange;
+animation-duration: 3.5s;
+animation-iteration-count: infinite;
+/*how many times it has to repeat */
+}
+
+@keyframes colorchange{
+    from{ background-color: red};
+    to{ background-color: yellow};
+    }
